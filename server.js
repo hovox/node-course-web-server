@@ -37,7 +37,6 @@ hbs.registerHelper('screamIt', (text) => {
 
 app.get('/', (req, res) => {
     res.render('home.hbs', {
-        title: 'Home',
         pageTitle: 'Home Page',
         welcomeMsg: 'Welcome to the NodeJS course',
     })
@@ -45,15 +44,13 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
-        title: 'About',
         pageTitle: 'About Page',
     })
 })
 
 app.get('/projects', (req, res) => {
     res.render('projects.hbs', {
-        title: 'Projects',
-        pageTitle: 'Projects'
+        pageTitle: 'Projects Page'
     })
 })
 
